@@ -1,0 +1,54 @@
+/* This is our flex box for our flex-box.html page */
+
+body {
+    background-color: rgb(249, 246, 246);
+}
+/* this is the style for our flexible box */
+
+.flex-box {
+    /* must use this to tell it it's a flex box */
+    display: flex;
+    flex-direction: row; /* colum, row-reverse, column-reverse */
+    flex-wrap: wrap;
+
+    /*
+
+    justify-content
+
+    baseline
+    space-between
+    space-around 
+    center (centers everything)
+
+    */
+
+    justify-content: baseline;
+}
+.item {
+    width: 6em;
+    padding: 3em 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 120px;
+
+}
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: rgb(109, 198, 109);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
