@@ -20,4 +20,4 @@ git branch <branchname> ===> show me a list of all current local branches
 
 git checkout <Branchname> ===> switch to the branch with the name <branchname> (remove the carats)
 
-git branch - d <branchname> ===> deletes the branch 
+git branch - d <branchname>
