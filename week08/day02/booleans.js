@@ -141,11 +141,58 @@ console.log();
  * 
  * But there is another shorthand which can be useful
  * 
+ *
+ * The ternary operator exists in JS and functions the same as in Java
+ * 
+ * But there is another shorthand which can be useful
  */
 
-// same syntax -- boolean statment ? if true use this : if false use this
-let ternaryValue = ((2 < 4) ? true : false);
+// same syntax -- boolean statement ? if true use this : if false use this
+let ternaryValue = ( (2 < 4) ? true : false );
 console.log(ternaryValue);
 
-let shorthandValue = ( (2-2) || (2 + 1)); // if the first value is truthy it will print if falsely will print the second (2 + 1)
+
+// if the first statement evaluates to something truthy, assign that value to the variable
+// if not, assign the second value to the variable
+let shorthandValue = ( (2 - 1) || (2 + 1) );
+
+// same thing longhand
+let longHandValue = ( ((2-1) == true) ? (2 - 1) : (2 + 1) )
+
 console.log(shorthandValue);
+console.log(longHandValue);
+
+console.log();
+
+function dosage(mgOfCaffeine) {
+    // we COULD do this
+    // if (mgOfCaffeine == null)
+
+    // this takes our function-scoped variable mgOfCaffeine and either assigns in the input value if it's truthy or 0 if it's not
+    mgOfCaffeine = (mgOfCaffeine || 0);
+    console.log(`I'm gonna need ${mgOfCaffeine}mg of caffeine for this lecture.`)
+}
+
+dosage(300);
+
+/**
+ * A NOTE ABOUT TEMPLATE STRINGS
+ * 
+ * You can run logic, including calling other functions, from with in the ${} of a template string.
+ */
+
+function printArray(myArray) {
+    // this reassigns the input array to myArray if it exists (empty array is still truthy) or the default array if it doesn't
+    myArray = (myArray || [1, 2, 3]);
+    for (let i = 0; i < myArray.length; i++) {
+        console.log(myArray[i]);
+    }
+}
+
+// printArray();
+// printArray([]);
+printArray([4, 5, 6]);
+// prints nothing
+printArray(10);
+// prints the characters since a string is an array of characters
+printArray('Hello World!');
