@@ -14,8 +14,10 @@ git push origin main ===> pushes my current branch to the remote branch with the
 git branch ===> show me a list of all current local branches
         - green one with start is the one one you're in currently
 
+
+          **Don't inclue <> when typeing these commands**
 git branch <branchname> ===> show me a list of all current local branches
 
 git checkout <Branchname> ===> switch to the branch with the name <branchname> (remove the carats)
 
-git branch - d <branchname>
+git branch - d <branchname> ===> deletes the branch 
