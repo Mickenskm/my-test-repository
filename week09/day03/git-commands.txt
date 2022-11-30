@@ -19,3 +19,5 @@ git branch <branchname> ===> show me a list of all current local branches
 git checkout <Branchname> ===> switch to the branch with the name <branchname> (remove the carats)
 
 git branch - d <branchname>
+
+git checkout -b <branchname> ===> creates a new branch with name <branchname> and sitches it
